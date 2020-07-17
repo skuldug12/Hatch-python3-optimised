@@ -83,6 +83,8 @@ def brutes(username, username_selector ,password_selector,login_btn_selector,pas
     optionss = webdriver.ChromeOptions()
     optionss.add_argument("--disable-popup-blocking")
     optionss.add_argument("--disable-extensions")
+    optionss.add_argument("--headless")
+    options.add_argument("--disable-gpu")
     browser = webdriver.Chrome(chrome_options=optionss)
     wait = WebDriverWait(browser, 10)
     while True:
